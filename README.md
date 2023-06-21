@@ -6,7 +6,7 @@
 <!-- TOC -->
 
 ## Problems and Solutions
-| Problem   | Solution   |
-|-----------|------------|
-| Problem 1 | Solution 1 |
+| Problem                                              | Solution                                                       |
+|------------------------------------------------------|----------------------------------------------------------------|
+| [1. Two Sum](https://leetcode.com/problems/two-sum/) | [JS](javascript/1.%20two-sum.js), [Py](python/1.%20two-sum.py) |
 
