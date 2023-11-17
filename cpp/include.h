@@ -6,6 +6,7 @@
 #define INC_1337_C0D3_INCLUDE_H
 
 #include <iostream>
+#include <cassert>
 
 #define assert_m(exp, msg) assert(((void)msg, exp))
 

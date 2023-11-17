@@ -5,7 +5,6 @@
 #include "include.h"
 
 #include <iostream>
-#include <cassert>
 
 class Solution {
 public:
