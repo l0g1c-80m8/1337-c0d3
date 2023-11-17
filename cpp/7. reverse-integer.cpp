@@ -2,10 +2,10 @@
 // Created by Rutvik Patel on 11/17/23.
 //
 
+#include "include.h"
+
 #include <iostream>
 #include <cassert>
-
-#define assert_m(exp, msg) assert(((void)msg, exp))
 
 class Solution {
 public:
@@ -33,7 +33,6 @@ public:
         }
         rev *= sign;
 
-        std::cout << "Value: " << rev << std::endl;
         return rev;
     }
 };
@@ -62,5 +61,5 @@ int main(__attribute__((unused)) int argc, __attribute__((unused)) char *argv[])
     for (auto [orig, rev] : test_cases)
         assert_m(solution.reverse(orig) == rev, "Failed!");
 
-    std::cout << std::endl << "All test cases passed!" << std::endl;
+    log("All test cases passed!");
 }
