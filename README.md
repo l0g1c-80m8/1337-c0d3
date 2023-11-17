@@ -14,3 +14,4 @@
 | [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                       | [Py](python/4.%20median-of-two-sorted-arrays.py)                    |
 | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                   | [Py](python/5.%20longest-palindromic-substring.py)                  |
 | [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/)                                                           | [JS](javascript/6.%20zigzag-conversion.js)                          |
+| [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                               | [Cpp](cpp/7.%20reverse-integer.cpp)                                 |
