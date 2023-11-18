@@ -16,3 +16,4 @@
 | [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/)                                                           | [JS](javascript/6.%20zigzag-conversion.js)                          |
 | [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                               | [Cpp](cpp/7.%20reverse-integer.cpp)                                 |
 | [8. String to Integer](https://leetcode.com/problems/string-to-integer-atoi/)                                                      | [Cpp](cpp/8.%20string-to-integer.cpp)                               |
+| [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                           | [Cpp](cpp/9.%20palindrome-number.cpp)                               |
