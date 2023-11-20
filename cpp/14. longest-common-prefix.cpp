@@ -44,7 +44,7 @@ int main(__attribute__((unused)) int argc, __attribute__((unused)) char *argv[])
 
     Solution solution;
 
-    for (auto [args, ans] : test_cases)
+    for (auto& [args, ans] : test_cases)
         assert_m(solution.longestCommonPrefix(args) == ans, "Failed!");
 
     log("All testcases passed!");

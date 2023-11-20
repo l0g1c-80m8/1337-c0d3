@@ -22,3 +22,4 @@
 | [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/)                                                            | [Cpp](cpp/12.%20integer-to-roman.cpp), [JS](javascript/12.%20integer-to-roman.js)               |
 | [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                            | [Cpp](cpp/13.%20roman-to-integer.cpp), [JS](javascript/13.%20roman-to-integer.js)               |
 | [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                  | [Cpp](cpp/14.%20longest-common-prefix.cpp), [JS](javascript/14.%20longest-common-prefix.js)     |
+| [15. 3 Sum](https://leetcode.com/problems/3sum)                                                                                    | [Cpp](cpp/15.%203-sum.cpp), [Py](python/15.%203-sum.py)                                         |
