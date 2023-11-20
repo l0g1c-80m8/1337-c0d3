@@ -21,3 +21,4 @@
 | [11. Container with Most Water](https://leetcode.com/problems/container-with-most-water/)                                          | [Cpp](cpp/11.%20container-with-most-water.cpp), [Py](python/11.%20container-with-most-water.py) |
 | [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/)                                                            | [Cpp](cpp/12.%20integer-to-roman.cpp), [JS](javascript/12.%20integer-to-roman.js)               |
 | [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                            | [Cpp](cpp/13.%20roman-to-integer.cpp), [JS](javascript/13.%20roman-to-integer.js)               |
+| [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                  | [Cpp](cpp/14.%20longest-common-prefix.cpp), [JS](javascript/14.%20longest-common-prefix.js)     |
