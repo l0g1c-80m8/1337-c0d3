@@ -20,3 +20,4 @@ add_executable(${PROJECT_NAME}_17 "cpp/17. letter-combinations-of-a-phone-number
 add_executable(${PROJECT_NAME}_18 "cpp/18. 4-sum.cpp")
 add_executable(${PROJECT_NAME}_19 "cpp/19. remove-nth-node-from-end-of-list.cpp")
 add_executable(${PROJECT_NAME}_20 "cpp/20. valid-parentheses.cpp")
+add_executable(${PROJECT_NAME}_20 "cpp/21. merge-two-sorted-lists.cpp")
