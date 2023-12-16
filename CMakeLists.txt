@@ -30,3 +30,4 @@ add_executable(${PROJECT_NAME}_26 "cpp/26. remove-duplicates-from-sorted-array.c
 add_executable(${PROJECT_NAME}_27 "cpp/27. remove-element.cpp")
 add_executable(${PROJECT_NAME}_28 "cpp/28. find-the-index-of-the-first-occurrence-in-a-string.cpp")
 add_executable(${PROJECT_NAME}_29 "cpp/29. divide-two-integers.cpp")
+add_executable(${PROJECT_NAME}_30 "cpp/30. substring-with-concatenation-of-all-words.cpp")
