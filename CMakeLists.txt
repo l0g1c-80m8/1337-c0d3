@@ -32,3 +32,4 @@ add_executable(${PROJECT_NAME}_28 "cpp/28. find-the-index-of-the-first-occurrenc
 add_executable(${PROJECT_NAME}_29 "cpp/29. divide-two-integers.cpp")
 #add_executable(${PROJECT_NAME}_30 "cpp/30. substring-with-concatenation-of-all-words.cpp")
 add_executable(${PROJECT_NAME}_31 "cpp/31. next-permutation.cpp")
+#add_executable(${PROJECT_NAME}_32 "cpp/32. longest-valid-parenthesis.cpp")
