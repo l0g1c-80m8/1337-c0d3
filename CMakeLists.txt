@@ -38,3 +38,4 @@ add_executable(${PROJECT_NAME}_34 "cpp/34. find-first-and-last-position-of-eleme
 add_executable(${PROJECT_NAME}_35 "cpp/35. search-insert-position.cpp")
 add_executable(${PROJECT_NAME}_36 "cpp/36. valid-sudoku.cpp")
 #add_executable(${PROJECT_NAME}_37 "cpp/37. sudoku-solver.cpp")
+add_executable(${PROJECT_NAME}_38 "cpp/38. count-and-say.cpp")
