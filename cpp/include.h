@@ -18,6 +18,6 @@ void log(Args && ...args) {
     std::cout << std::endl << std::flush;
 }
 
-#include "./include/linked_list.h"
+//#include "./include/linked_list.h"
 
 #endif //INC_1337_C0D3_INCLUDE_H
