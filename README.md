@@ -5,6 +5,10 @@
   * [Problems and Solutions](#problems-and-solutions)
 <!-- TOC -->
 
+Here I put my solutions to leet code problems along with other interesting problems I come across.
+
+#### Leetcode profile [here](https://leetcode.com/_r00tp/).
+
 ## Problems and Solutions
 | Problem                                                                                                                                               | Solution                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
