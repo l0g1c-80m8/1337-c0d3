@@ -5,7 +5,7 @@ from typing import List
 # lc sol start
 class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
-        return list(map(list, list(combinations(range(1, n + 1), k))))
+        return list(map(list, combinations(range(1, n + 1), k)))
 
 # lc sol end
 
