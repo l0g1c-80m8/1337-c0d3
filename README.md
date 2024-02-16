@@ -2,7 +2,7 @@
 
 <!-- TOC -->
 * [1337-c0d3 (Solutions to Leet Code Problems)](#1337-c0d3-solutions-to-leet-code-problems)
-      * [Leetcode profile here.](#leetcode-profile-here)
+  * [Leetcode profile here.](#leetcode-profile-here)
   * [Problems and Solutions](#problems-and-solutions)
 <!-- TOC -->
 
