@@ -88,3 +88,4 @@ add_executable(${PROJECT_NAME}_81 "cpp/81. search-in-rotated-sorted-array-ii.cpp
 #add_executable(${PROJECT_NAME}_85 "cpp/85. maximal-rectangle.cpp")
 #add_executable(${PROJECT_NAME}_86 "cpp/86. partition-list.cpp")
 #add_executable(${PROJECT_NAME}_87 "cpp/87. scramble-string.cpp")
+add_executable(${PROJECT_NAME}_88 "cpp/88. merge-sorted-array.cpp")
