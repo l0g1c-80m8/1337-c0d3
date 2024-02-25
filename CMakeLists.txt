@@ -85,3 +85,4 @@ add_executable(${PROJECT_NAME}_81 "cpp/81. search-in-rotated-sorted-array-ii.cpp
 #add_executable(${PROJECT_NAME}_82 "cpp/82. remove-duplicates-from-sorted-list-ii.cpp")
 #add_executable(${PROJECT_NAME}_83 "cpp/83. remove-duplicates-from-sorted-list.cpp")
 #add_executable(${PROJECT_NAME}_84 "cpp/84. largest-rectangle-in-histogram.cpp")
+#add_executable(${PROJECT_NAME}_85 "cpp/85. maximal-rectangle.cpp")
