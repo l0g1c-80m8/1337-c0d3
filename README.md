@@ -1,10 +1,10 @@
-# 1337-c0d3 (Solutions to Leet Code Problems)
+# My Solutions to Leet Code Problems
 
 <!-- TOC -->
-* [1337-c0d3 (Solutions to Leet Code Problems)](#1337-c0d3-solutions-to-leet-code-problems)
-    * [Leetcode problem set here.](#leetcode-problem-set-here)
-    * [Leetcode profile here.](#leetcode-profile-here)
-* [Problems and Solutions](#problems-and-solutions)
+* [My Solutions to Leet Code Problems](#my-solutions-to-leet-code-problems)
+      * [Leetcode problem set here.](#leetcode-problem-set-here)
+      * [Leetcode profile here.](#leetcode-profile-here)
+  * [Problems and Solutions](#problems-and-solutions)
 <!-- TOC -->
 
 Here I put my solutions to leet code problems along with other interesting problems I come across.
