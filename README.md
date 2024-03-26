@@ -2,8 +2,8 @@
 
 <!-- TOC -->
 * [My Solutions to Leet Code Problems](#my-solutions-to-leet-code-problems)
-      * [Leetcode problem set here.](#leetcode-problem-set-here)
-      * [Leetcode profile here.](#leetcode-profile-here)
+  * [Leetcode problem set here.](#leetcode-problem-set-here)
+  * [Leetcode profile here.](#leetcode-profile-here)
   * [Problems and Solutions](#problems-and-solutions)
 <!-- TOC -->
 
