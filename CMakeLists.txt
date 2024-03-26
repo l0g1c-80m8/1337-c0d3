@@ -96,3 +96,6 @@ add_executable(${PROJECT_NAME}_91 "cpp/91. decode-ways.cpp")
 add_executable(${PROJECT_NAME}_93 "cpp/93. restore-ip-addresses.cpp")
 #add_executable(${PROJECT_NAME}_94 "cpp/94. binary-tree-inorder-traversal.cpp")
 #add_executable(${PROJECT_NAME}_95 "cpp/95. unique-binary-search-trees-ii.cpp")
+
+# Problem solutions any later than this point are no longer compiled and tested locally.
+# They will be verified on leetcode directly.
