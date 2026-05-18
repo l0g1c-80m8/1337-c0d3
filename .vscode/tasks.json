@@ -1,0 +1,52 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run current file",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "set -e; case \"$EXT\" in .py) python3 \"$FILE\";; .js) node \"$FILE\";; .cpp) num=\"${BASE%%.*}\"; target=\"1337_c0d3_${num}\"; [ -d build ] || cmake -S . -B build -DCMAKE_BUILD_TYPE=Release; cmake --build build -j$(nproc) --target \"$target\"; \"./build/$target\";; .rs) out=\"/tmp/rust_$$\"; rustc -O \"$FILE\" -o \"$out\" && \"$out\"; rm -f \"$out\";; *) echo \"Unsupported extension: $EXT (open a .cpp/.py/.js/.rs file)\"; exit 1;; esac"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "FILE": "${file}",
+          "BASE": "${fileBasenameNoExtension}",
+          "EXT": "${fileExtname}"
+        }
+      },
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "C++: configure (cmake)",
+      "type": "shell",
+      "command": "cmake -S . -B build -DCMAKE_BUILD_TYPE=Release",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "C++: build all",
+      "type": "shell",
+      "command": "cmake --build build -j$(nproc)",
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "C++: clean build dir",
+      "type": "shell",
+      "command": "rm -rf build",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

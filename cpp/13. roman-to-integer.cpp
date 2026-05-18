@@ -15,7 +15,7 @@ public:
     int romanToInt(std::string s) {
         std::string aug_str = s + "$";
 
-        return std::reduce(aug_str.begin(), aug_str.end() - 1, 0, [&](int acc, char& ch) {
+        return std::accumulate(aug_str.begin(), aug_str.end() - 1, 0, [&](int acc, char& ch) {
             return acc +
             (
                 ROMAN_VS_NUMERIC[ch] *

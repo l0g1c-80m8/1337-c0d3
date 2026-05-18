@@ -7,6 +7,25 @@
 
 #include <iostream>
 #include <cassert>
+#include <vector>
+#include <string>
+#include <array>
+#include <tuple>
+#include <utility>
+#include <limits>
+#include <algorithm>
+#include <numeric>
+#include <iterator>
+#include <ranges>
+#include <unordered_map>
+#include <unordered_set>
+#include <map>
+#include <set>
+#include <stack>
+#include <queue>
+#include <sstream>
+#include <cmath>
+#include <cstdint>
 
 #define assert_m(exp, msg) assert(((void)msg, exp))
 
