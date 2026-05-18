@@ -7,17 +7,30 @@
       "command": "bash",
       "args": [
         "-c",
-        "set -e; case \"$EXT\" in .py) python3 \"$FILE\";; .js) node \"$FILE\";; .cpp) num=\"${BASE%%.*}\"; target=\"1337_c0d3_${num}\"; [ -d build ] || cmake -S . -B build -DCMAKE_BUILD_TYPE=Release; cmake --build build -j$(nproc) --target \"$target\"; \"./build/$target\";; .rs) num=\"${BASE%%.*}\"; cargo run --release --quiet --manifest-path rust/Cargo.toml --bin \"p${num}\";; *) echo \"Unsupported extension: $EXT (open a .cpp/.py/.js/.rs file)\"; exit 1;; esac"
+        "case \"$EXT\" in .cpp) lang=cpp;; .py) lang=python;; .js) lang=javascript;; .rs) lang=rust;; *) echo \"Unsupported extension: $EXT (open a .cpp/.py/.js/.rs file)\"; exit 1;; esac; num=\"${BASE%%.*}\"; exec .vscode/run.sh \"$lang\" \"$num\""
       ],
       "options": {
         "cwd": "${workspaceFolder}",
         "env": {
-          "FILE": "${file}",
           "BASE": "${fileBasenameNoExtension}",
           "EXT": "${fileExtname}"
         }
       },
       "group": { "kind": "build", "isDefault": true },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Run problem (pick lang + #)",
+      "type": "shell",
+      "command": ".vscode/run.sh",
+      "args": ["${input:lang}", "${input:num}"],
+      "options": { "cwd": "${workspaceFolder}" },
       "presentation": {
         "reveal": "always",
         "panel": "dedicated",
@@ -47,6 +60,20 @@
       "command": "rm -rf build",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "lang",
+      "type": "pickString",
+      "description": "Language",
+      "options": ["cpp", "python", "javascript", "rust"],
+      "default": "cpp"
+    },
+    {
+      "id": "num",
+      "type": "promptString",
+      "description": "Problem number (e.g. 1, 11, 42)"
     }
   ]
 }
