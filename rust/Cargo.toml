@@ -1,0 +1,14 @@
+[package]
+name = "leetcode-solutions"
+version = "0.1.0"
+edition = "2021"
+
+# Each problem is its own binary. The `name` is `p<problem-number>` so the
+# VS Code task can derive it from the filename. The `path` keeps the
+# leetcode-style "N. slug.rs" naming.
+#
+# To add a new problem, copy a `[[bin]]` block and update both fields.
+
+[[bin]]
+name = "p1"
+path = "1. two-sum.rs"

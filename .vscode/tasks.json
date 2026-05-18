@@ -7,7 +7,7 @@
       "command": "bash",
       "args": [
         "-c",
-        "set -e; case \"$EXT\" in .py) python3 \"$FILE\";; .js) node \"$FILE\";; .cpp) num=\"${BASE%%.*}\"; target=\"1337_c0d3_${num}\"; [ -d build ] || cmake -S . -B build -DCMAKE_BUILD_TYPE=Release; cmake --build build -j$(nproc) --target \"$target\"; \"./build/$target\";; .rs) out=\"/tmp/rust_$$\"; rustc -O --crate-name solution \"$FILE\" -o \"$out\" && \"$out\"; rm -f \"$out\";; *) echo \"Unsupported extension: $EXT (open a .cpp/.py/.js/.rs file)\"; exit 1;; esac"
+        "set -e; case \"$EXT\" in .py) python3 \"$FILE\";; .js) node \"$FILE\";; .cpp) num=\"${BASE%%.*}\"; target=\"1337_c0d3_${num}\"; [ -d build ] || cmake -S . -B build -DCMAKE_BUILD_TYPE=Release; cmake --build build -j$(nproc) --target \"$target\"; \"./build/$target\";; .rs) num=\"${BASE%%.*}\"; cargo run --release --quiet --manifest-path rust/Cargo.toml --bin \"p${num}\";; *) echo \"Unsupported extension: $EXT (open a .cpp/.py/.js/.rs file)\"; exit 1;; esac"
       ],
       "options": {
         "cwd": "${workspaceFolder}",
