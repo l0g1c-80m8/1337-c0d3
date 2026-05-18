@@ -3,3 +3,5 @@
 
 # cmake
 cmake-build-debug/
+build/*
+!build/.gitkeep
