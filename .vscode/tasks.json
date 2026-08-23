@@ -40,6 +40,13 @@
       "problemMatcher": ["$gcc"]
     },
     {
+      "label": "Python: sync env (uv)",
+      "type": "shell",
+      "command": "uv sync --project python",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
       "label": "C++: configure (cmake)",
       "type": "shell",
       "command": "cmake -S . -B build -DCMAKE_BUILD_TYPE=Release",

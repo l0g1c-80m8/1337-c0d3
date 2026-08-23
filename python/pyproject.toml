@@ -1,0 +1,9 @@
+[project]
+name = "leetcode-python"
+version = "0.1.0"
+description = "LeetCode solutions in Python, run via uv"
+requires-python = ">=3.10"
+dependencies = []
+
+# No [build-system]: uv treats this as a non-packaged (virtual) project, so
+# `uv run` only manages the environment and never tries to install the folder.

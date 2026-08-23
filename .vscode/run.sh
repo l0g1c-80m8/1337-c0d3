@@ -25,6 +25,15 @@ case "$LANG_ID" in
       exit 1
     fi
     target="1337_c0d3_${PROB_NUM}"
+    # Heal a build/ that was configured by a CMake which no longer exists. This
+    # happens routinely with snap's cmake: an auto-update garbage-collects the old
+    # revision that build/ has baked into its Makefiles, and every build then dies
+    # with "cmake: No such file or directory". Detect the dead path and start clean.
+    cached_cmake=$(sed -n 's/^CMAKE_COMMAND:INTERNAL=//p' build/CMakeCache.txt 2>/dev/null)
+    if [ -n "$cached_cmake" ] && [ ! -x "$cached_cmake" ]; then
+      echo "Cached CMake ($cached_cmake) no longer exists — reconfiguring build/ from scratch."
+      rm -rf build
+    fi
     [ -d build ] || cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
     cmake --build build -j"$(nproc)" --target "$target"
     "./build/$target"
@@ -35,7 +44,14 @@ case "$LANG_ID" in
       echo "No python file for problem ${PROB_NUM} (no python/${PROB_NUM}. *.py)"
       exit 1
     fi
-    python3 "${f[0]}"
+    if ! command -v uv >/dev/null 2>&1; then
+      echo "uv is not installed. Install it with:  curl -LsSf https://astral.sh/uv/install.sh | sh"
+      echo "(see https://docs.astral.sh/uv/ ). It manages the python/.venv used to run solutions."
+      exit 1
+    fi
+    # uv auto-creates/syncs python/.venv (per python/pyproject.toml) on first run,
+    # then runs the file from that environment.
+    uv run --project python --quiet python "${f[0]}"
     ;;
   javascript|js)
     f=("javascript/${PROB_NUM}. "*.js)
