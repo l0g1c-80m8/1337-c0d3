@@ -4,6 +4,7 @@
 * [My Solutions to Leet Code Problems](#my-solutions-to-leet-code-problems)
       * [LeetCode problem set here](#leetcode-problem-set-here)
       * [LeetCode profile here](#leetcode-profile-here)
+  * [Running solutions](#running-solutions)
   * [Problems and Solutions](#problems-and-solutions)
 <!-- TOC -->
 
@@ -12,6 +13,30 @@ Here I put my solutions to leet code problems along with other interesting probl
 #### LeetCode problem set [here](https://leetcode.com/problemset/)
 
 #### LeetCode profile [here](https://leetcode.com/_r00tp/)
+
+## Running solutions
+
+Solutions run through a single dispatcher, [`.vscode/run.sh`](.vscode/run.sh), wired
+into VS Code tasks (`Terminal → Run Task…`, or `Ctrl/Cmd+Shift+B` for the default):
+
+* **Run current file** — runs the file open in the editor (`.cpp` / `.py` / `.js` / `.rs`).
+* **Run problem (pick lang + #)** — prompts for a language and problem number.
+
+From a terminal you can call it directly: `.vscode/run.sh <lang> <num>`, e.g.
+`.vscode/run.sh python 1`.
+
+### Toolchains per language
+
+* **Python** — runs with [`uv`](https://docs.astral.sh/uv/); auto-creates `python/.venv` on first run (optional: run the **Python: sync env (uv)** task to pre-build it).
+* **C++** — CMake + a compiler; run **C++: configure (cmake)** then **C++: build all**.
+* **JavaScript** — `node` installed.
+* **Rust** — Cargo / Rust toolchain installed.
+
+Python uses [`uv`](https://docs.astral.sh/uv/) to manage the environment defined in
+[`python/pyproject.toml`](python/pyproject.toml). `uv run` creates and syncs
+`python/.venv` on demand, so the first run is a one-time setup and every run after is
+near-instant — no manual `venv`/`pip` steps. Install `uv` with
+`curl -LsSf https://astral.sh/uv/install.sh | sh` if you don't have it.
 
 ## Problems and Solutions
 
@@ -23,7 +48,7 @@ Here I put my solutions to leet code problems along with other interesting probl
 | [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                          | [Py](python/4.%20median-of-two-sorted-arrays.py)                                                                                                            |
 | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                                      | [Py](python/5.%20longest-palindromic-substring.py)                                                                                                          |
 | [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/)                                                                              | [JS](javascript/6.%20zigzag-conversion.js)                                                                                                                  |
-| [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                                  | [Cpp](cpp/7.%20reverse-integer.cpp)                                                                                                                         |
+| [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                                  | [Cpp](cpp/7.%20reverse-integer.cpp), [Py](python/7.%20reverse-integer.py)                                                                                   |
 | [8. String to Integer](https://leetcode.com/problems/string-to-integer-atoi/)                                                                         | [Cpp](cpp/8.%20string-to-integer.cpp)                                                                                                                       |
 | [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                              | [Cpp](cpp/9.%20palindrome-number.cpp), [JS](javascript/9.%20palindrome-number.js)                                                                           |
 | [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)                                                          | [Cpp - WIP](cpp/10.%20regular-expression-matching.cpp)                                                                                                      |
