@@ -2,17 +2,19 @@
 
 <!-- TOC -->
 * [My Solutions to Leet Code Problems](#my-solutions-to-leet-code-problems)
-  * [Leetcode problem set here.](#leetcode-problem-set-here)
-  * [Leetcode profile here.](#leetcode-profile-here)
+      * [LeetCode problem set here](#leetcode-problem-set-here)
+      * [LeetCode profile here](#leetcode-profile-here)
   * [Problems and Solutions](#problems-and-solutions)
 <!-- TOC -->
 
 Here I put my solutions to leet code problems along with other interesting problems I come across.
 
-#### Leetcode problem set [here](https://leetcode.com/problemset/).
-#### Leetcode profile [here](https://leetcode.com/_r00tp/).
+#### LeetCode problem set [here](https://leetcode.com/problemset/)
+
+#### LeetCode profile [here](https://leetcode.com/_r00tp/)
 
 ## Problems and Solutions
+
 | Problem                                                                                                                                               | Solution                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/)                                                                                                  | [JS](javascript/1.%20two-sum.js), [Py](python/1.%20two-sum.py), [Rs](rust/1.%20two-sum.rs)                                                                  |
@@ -110,7 +112,7 @@ Here I put my solutions to leet code problems along with other interesting probl
 | [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)                                                                       | [Cpp](cpp/93.%20restore-ip-addresses.cpp)                                                                                                                   |
 | [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                                     | [Cpp](cpp/94.%20binary-tree-inorder-traversal.cpp)                                                                                                          |
 | [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)                                                     | [Cpp](cpp/95.%20unique-binary-search-trees-ii.cpp)                                                                                                          |
-| Moving forward, the C++ programs will only be verified and tested on leet code and not locally                                                        | The code will still be available in the corresponding files (but without test cases in the main method).                                                    |
+| Moving forward, the C++ programs are verified and tested on leet code and not locally                                                                 | The code will still be available in the corresponding files (but without test cases in the main method).                                                    |
 | [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)                                                           | [Cpp](cpp/96.%20unique-binary-search-trees.cpp)                                                                                                             |
 | [97. Interleaving String](https://leetcode.com/problems/interleaving-string/)                                                                         | [Cpp](cpp/97.%20interleaving-strings.cpp)                                                                                                                   |
 | [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                         | [Cpp](cpp/98.%20validate-binary-search-tree.cpp)                                                                                                            |
